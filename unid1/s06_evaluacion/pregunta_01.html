@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosTema5.css">
+</head>
+<body>
+	<h1>Aplicación 1 - Validación con atributos HTML</h1>
+	<div id="content">
+	<form action="p00_validada.php" method="post">
+		<table>
+			<tr>
+				<th colspan="2" class="titulo">Aplicación 1 - Validación con atributos HTML</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Nombres completos (1punto)*:</td>
+				<td id="tdDer"><input type="text" name="txtNombres" id="txtNombres" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Edad Actual (1punto)*:</td>
+				<td id="tdDer"><input type="number" name="txtEdad" id="txtEdad" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Escribir tres números (3puntos)*:</td>
+				<td id="tdDer"><input type="number" name="txtNumeros" id="txtNumeros" value="" required></td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function fnPrueba1(xValor) {
+            document.writeln("Mensaje desde..." + xValor);
+        }
+        const fnPrueba2 = (xValor) => {
+            document.writeln("Mensaje desde..." + xValor);
+        }
+
+        function fnPrueba3(xValor){
+            document.writeln("Mensaje desde..." + xValor);
+            return "Hola... fn con retorno";
+        }
+
+        const fnPrueba4 = (xValor) => {
+            document.writeln("Mensaje desde..." + xValor);
+            return "Hola... fn FLECHA con retorno";
+        }
+
+        const fnPrueba5 = (xValor) => document.writeln("Mensaje desde..." + xValor);
+        const fnPrueba6 = (xValor) => ("Hola... fn FLECHA con retorno");
+    </script>
+</head>
+<body>
+    <h1>Definición de funciones</h1>
+    <button type="button" onclick="fnPrueba1('1. FN sin retorno');">1. Función sin retorno</button><br/>
+    <button type="button" onclick="fnPrueba2('2. FN flecha sin retorno');">2. Función flecha sin retorno</button><br/>
+    <button type="button" onclick="alert(fnPrueba3('3. FN con retorno'));">3. Función con retorno</button><br/>
+    <button type="button" onclick="alert(fnPrueba4('4. FN flecha con retorno'));">4. Función flecha con retorno</button><br/>
+    <button type="button" onclick="alert(fnPrueba5('5. FN felcha sin retorno simple'));">5. Función flecha sin retorno</button><br/>
+    <button type="button" onclick="alert(fnPrueba6('6. FN flecha CON retorno simple'));">6. Función flecha CON retorno</button><br/>
+
+
+</body>
+</html>
